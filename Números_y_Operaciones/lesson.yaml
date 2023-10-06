@@ -1,0 +1,106 @@
+- Class: meta
+  Course: Matemáticas Básicas
+  Lesson: Números y Operaciones
+  Author: L. Martínez-Balbuena
+  Type: Standard
+  Organization: Universidad Digital del Estado de México
+  Version: 2.4.5
+
+- Class: text
+  Output: 'Bienvenido al curso de Matemáticas Básicas. 
+  Empezaremos con una introducción a los números enteros.'
+  
+- Class: text
+  Output: 'Los números enteros son una parte fundamental de las Matemáticas y 
+  representan una extensión natural de los números naturales. Mientras que 
+  los números naturales (1, 2, 3, 4, ...) se utilizan para contar objetos y 
+  representar cantidades positivas, los números enteros incluyen a los 
+  números naturales junto con sus negativos y el número cero.'
+  
+- Class: text  
+  Output: 'En otras palabras, los enteros son un conjunto infinito de 
+  números que abarcan desde el negativo infinito (..., -3, -2, -1) hasta el 
+  positivo infinito (1, 2, 3, ...), pasando por el cero (0).'
+
+
+- Class: mult_question
+  Output: Entonces, ¿El conjunto de los enteros es mayor al de los naturales?
+  AnswerChoices: Sí;No;Son Iguales
+  CorrectAnswer: Sí
+  AnswerTests: omnitest(correctVal='Sí')
+  Hint: Los números enteros contiene a los naturales, a sus negativos y al cero.
+
+- Class: mult_question
+  Output: Por otro lado, ¿el número 9 es un número natural o entero?
+  AnswerChoices: Natural;Entero;Ambos
+  CorrectAnswer: Ambos
+  AnswerTests: omnitest(correctVal='Ambos')
+  Hint: El conjunto de los enteros contiene a los naturales.  
+
+- Class: text
+  Output: 'Los números enteros se utilizan en una variedad de aplicaciones 
+  matemáticas y en la vida cotidiana. Pueden representar ganancias y pérdidas 
+  en finanzas, temperaturas por encima y por debajo del punto de congelación, 
+  posiciones en una línea numérica y muchas otras situaciones.'
+
+- Class: exact_question
+  Output: ¿A qué temperatura (en C) se hierve el agua?
+  CorrectAnswer: 100
+  AnswerTests: omnitest(correctVal='100')
+  Hint:  Recorda un número muy conocido 100.
+  
+- Class: exact_question
+  Output: ¿A qué temperatura (en C) se congela el agua?
+  CorrectAnswer: 0
+  AnswerTests: omnitest(correctVal = 0)
+  Hint: Un número entero entre -1 y 1.  
+
+- Class: text
+  Output: 'Además, los números enteros son esenciales en la aritmética básica
+  para realizar operaciones como la suma, la resta, la multiplicación y la 
+  división.'
+
+- Class: cmd_question
+  Output: Escriba la suma de 2 + 2.
+  CorrectAnswer: 2 + 2
+  AnswerTests: omnitest(correctExpr='2 + 2')
+  Hint: Sólo escriba 2 + 2.
+
+- Class: cmd_question
+  Output: Escriba la resta de 232 - 8392.
+  CorrectAnswer: 232 - 8392
+  AnswerTests: omnitest(correctExpr='232 - 8392')
+  Hint: Sólo escriba 232 - 8392.  
+
+- Class: cmd_question
+  Output: Escriba la multiplicación de 2234 * 1829.
+  CorrectAnswer: 2234 * 1829
+  AnswerTests: omnitest(correctExpr='2234 * 1829')
+  Hint: Sólo escriba 2234 * 1829.
+
+- Class: cmd_question
+  Output: Escriba la división de 54970 / 2390.
+  CorrectAnswer: 54970 / 2390
+  AnswerTests: omnitest(correctExpr='54970 / 2390')
+  Hint: Sólo escriba 54970 / 2390.
+
+- Class: text
+  Output: 'En resumen, los números enteros son un conjunto de números que incluye
+  tanto los números positivos como los negativos, junto con el cero, y son
+  fundamentales en matemáticas y en la resolución de problemas de la vida 
+  cotidiana.'
+
+- Class: figure
+  Output: Observa la siguiente figura
+  Figure: plot.R
+  FigureType: new
+  
+- Class: text_question
+  Output: ¿Qué letra se usa para denotar el conjunto de los números enteros?
+  CorrectAnswer: 'Z'
+  AnswerTests: omnitest(correctVal = 'Z')
+  Hint: ¿Cuál es la última letra del alfabeto?
+  
+- Class: video
+  Output: ¿Te gustaría saber un dato interesante sobre los números enteros?
+  VideoLink: https://www.youtube.com/watch?v=MOtCBPXO698
